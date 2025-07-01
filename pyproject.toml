@@ -1,15 +1,10 @@
-[tool.poetry]
-name = "pycryptoarg"
+[project]
+name = "pycrypto"
 version = "0.1.0"
-description = ""
-authors = ["Sirius Bell"]
-license = "GNU General Public License v3.0"
+description="simple script to encrypt a file or message"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.13"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "argparse>=1.4.0",
+    "loguru>=0.7.3",
+]
